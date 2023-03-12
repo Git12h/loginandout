@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css') }}">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container_element">
+            <form method="POST" action="">
+                <div class="company_name">
+                    <img src="" alt="">
+                    <h1>CRYTO TRADERS</h1>
+                </div>
+                <div class="name_of_page">
+                    <img src="" alt="">
+                    <h1>Log in</h1>
+                </div>
+                {{ form.hidden_tag() }}
+                <div class="username">
+                    <!-- <label for="username">Username</label> -->
+                    {{ form.username }}
+                </div>
+                <div class="password">
+                    <!-- <label for="password">Password</label> -->
+                    {{ form.password }}
+                </div>
+                <div class="submit">
+                    {{ form.submit }}
+                </div>
+                <div class="dont_have_an_acc">
+                    <a href="{{ url_for('register') }}">New Here? Click here to Register!</a> <br>
+                    <a href="{{ url_for('index') }}" style="font-weight: 600;">Home</a> 
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+   
+</body>
+
+</html>

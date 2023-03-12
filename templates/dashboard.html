@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>INVESTMENT SITE</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard.css') }}">
+    <script src="https://kit.fontawesome.com/1d2ada3f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav">
+            <div class="navImage">
+                <img src="static/INVESTMENT IMAGES/nimiq.png" alt="">
+                <p class="navInvest">CRYPTO TRADE</p>
+            </div>
+    
+            <!-- FLOAT RIGHT NAV WITH PROFILE -->
+            <div class="floatRight">
+                <!-- <div class="lightDarkMode" id="mainNavlightDarkMode">
+                    <input type="checkbox" id="dark-mode" class="input">
+                    <label for="dark-mode" class="label">
+                        <div class="circle"></div>
+                    </label>
+                </div> -->
+
+                <div class="navProfile">
+                    <img src="static/INVESTMENT IMAGES/download copy.png" alt="" id="ProfilePic">
+                    <p class="ProfilePicName" id="">KODAK</p>
+                    <img src="static/INVESTMENT IMAGES/clipart1181112.png" alt="" id="arrowDownIcon">
+                </div>
+                <img src="static/INVESTMENT IMAGES/hamburger-menu-icon.jpeg" alt="" id="HAMICON">
+            </div>
+        </div>
+        <div class="logoutDIV">
+            <div class="logoutDIVOne">
+                <i class="fa-regular fa-bell"></i>
+                <a href=""><p class="logout">Notification</p></a>
+            </div>
+            <div class="logoutDIVOne">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <a href=""><p class="logout">Updates</p></a>
+            </div>
+            <div class="logoutDIVOnee" id="logoutDIVOne">
+                <input type="file" name="" id="file">
+                <label for="file" class="logout" id="uploadbtn">Upload Profile</label>
+                <!-- <a href=""><p class="logout"></p></a> -->
+            </div>
+            <div class="logoutDIVOne">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <!-- <a href="registration.html"><p class="logout">Logout</p></a>  -->
+                <a href="{{url_for('logout')}}" class="logout">logout</a>
+            </div> 
+        </div>
+    </nav>
+
+
+   
+    <!--CONTAINER THAT CONTAINS EVERYTHING-->
+    <div class="container">
+
+        <div class="containerEl">
+            <!-- FIRST  -->
+            <div class="left">
+                <div class="leftONE" id="leftONE">
+                    <p class="theme">THEME</p>
+                    <div class="lightDarkMode">
+                        <input type="checkbox" id="dark-mode" class="input">
+                        <label for="dark-mode" class="label">
+                            <div class="circle"></div>
+                        </label>
+                    </div>
+                </div>
+                
+
+                <a href=""><div class="leftOne" id="leftOne">
+                    <p id="dashboard"><i class="fa-solid fa-house-user"></i></p>
+                    <p class="leftParagraph">Dashboard</p>
+                </div>
+                </a>
+<!-- 
+                <a href=""><div class="leftOne" id="leftTwo">
+                    <p id="exchange"></p>
+                    <p class="leftParagraphOne">Exchange</p>
+                </div>
+                </a> -->
+
+                <a href=""><div class="leftOne" id="leftThree">
+                    <p id="wallet"><i class="fa-solid fa-wallet"></i></p>
+                    <p class="leftParagraphTwo">Withdraw</p>
+                </div>
+                </a>
+
+                <a href=""><div class="leftOne" id="leftFour">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <p class="leftParagraphThree">Deposite</p>
+                </div>
+                </a>
+
+                <a href=""><div class="leftOne" id="leftFive">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p class="leftParagraphFour">Analytics</p>
+                </div>
+                </a>
+                
+                <!-- <a href=""><div class="leftOne" id="leftSix">
+                    <i class="fa-solid fa-message"></i>
+                    <p class="leftParagraphFive">Messages</p>
+                </div>
+                </a> -->
+
+                <a href=""><div class="leftOne" id="leftSeven">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <p class="leftParagraphSix">Help Center</p>
+                </div>
+                </a>
+
+                <a href=""><div class="leftOne" id="leftEight">
+                    <i class="fa-solid fa-gear"></i>
+                    <p class="leftParagraphSeven">Settings</p>
+                </div>
+                </a>
+                <div class="leftTwo">
+                    <img src="static/INVESTMENT IMAGES/stock-exchange-icon-png-9912.png" alt="" class="">
+                    <p class="Updates-Available">Updates Available</p>
+                    <p class="Security-Update">Security Update</p>
+                    <p class="General-Update">General Update</p>
+                    <p class="Update-Now">Update Now</p>
+                </div>
+            </div>
+
+            <!-- SECOND -->
+            <!-- MIDDLE -->
+            <div class="middle">
+                <div class="middleOne">
+
+                    <p class="overview">OVERVIEW</p>
+                    <div class="middleOneOne">
+
+                        <!-- CREDIT CARD ONE -->
+                        <div class="middleElOne" id="redCard">
+
+                            <div class="middleElOneChild">
+                                <div class="btc">
+                                    <img src="static/INVESTMENT IMAGES/images/BTC.png" alt="" id="middleElOneChildImage">
+                                    <p id="btc">BTC</p>
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/visa.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="middleElOneChild">
+                                <div class="btc">
+                                    <span>$</span><span id="tens">1</span>
+                                    <!-- <p id="tens">00</p> -->
+                                </div>
+                                <div>
+                                    <p class="middleElOneChildPrice">0</p> 
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/card chip.png" alt="" id="visaImage">
+                                </div>
+                            </div>
+                            
+                            <div class="middleElOneChildThird">
+                                <div class="btcCardNum">
+                                    <p class="card-num-small">Card Holder</p>
+                                    <p class="john-joe-bold">JOHN JOE</p>
+                                </div>
+                                <div class="visaAll">
+                                    <div class="visaEX">
+                                        <p class="card-num-small">Expiry</p>
+                                        <p class="john-joe-bold">08/24</p>
+                                    </div>
+                                    <div class="visaCvv">
+                                        <p class="card-num-small">CVV</p>
+                                        <p class="john-joe-bold">123</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <!---->
+
+
+                          <!-- CREDIT CARD TWO -->
+                        <div class="middleElOne" id="blackCard">
+                            <div class="middleElOneChild">
+                                <div class="btc">
+                                    <img src="static/INVESTMENT IMAGES/images/ETH.png" alt="" id="middleElOneChildImage">
+                                    <p id="btc">ETH</p>
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/master card.png" alt="">
+                                </div>
+                            </div>  
+                            <div class="middleElOneChild">
+                                <!-- <div class="btc">
+                                   <span>$</span> <p class="middleElOneChildPrice" id="ethchild">1.00</p>
+                                </div> -->
+                                <div class="btc">
+                                    <span>$</span><span id="ethchild" id>1</span>
+                                    <!-- <p id="tens">00</p> -->
+                                </div>
+                                <div>
+                                    <p class="middleElOneChildPrice" id="middleElOneChildPrice">0</p> 
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/card chip.png" alt="" id="visaImage">
+                                </div>
+                            </div>
+
+                            <div class="middleElOneChildThird">
+                                <div class="btcCardNum">
+                                    <p class="card-num-small">Card Holder</p>
+                                    <p class="john-joe-bold">JOHN JOE</p>
+                                </div>
+                                <div class="visaAll">
+                                    <div class="visaEX">
+                                        <p class="card-num-small">Expiry</p>
+                                        <p class="john-joe-bold">08/24</p>
+                                    </div>
+                                    <div class="visaCvv">
+                                        <p class="card-num-small">CVV</p>
+                                        <p class="john-joe-bold">123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <!---->
+
+
+                        <!-- CREDIT CARD THREE -->
+                        <div class="middleElOne" id="blueCard">
+                            <div class="middleElOneChild">
+                                <div class="btc">
+                                    <img src="static/INVESTMENT IMAGES/images/BTC.png" alt="" id="middleElOneChildImage">
+                                    <p id="btc">USDT</p>
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/visa.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="middleElOneChild">
+                                <!-- <div class="btc">
+                                    <span>$</span><p class="middleElOneChildPrice" id="usdtchild">1.00</p>
+                                </div> -->
+                                <div class="btc">
+                                    <span>$</span><span id="usdtchild">1</span>
+                                </div>
+                                <div>
+                                    <p class="middleElOneChildPrice" id="middleElOneChildPriceidusdt">0</p> 
+                                </div>
+                                <div class="visa">
+                                    <img src="static/INVESTMENT IMAGES/images/card chip.png" alt="" id="visaImage">
+                                </div>
+                            </div>
+                            
+                            <div class="middleElOneChildThird">
+                                <div class="btcCardNum">
+                                    <p class="card-num-small">Card Holder</p>
+                                    <p class="john-joe-bold">JOHN JOE</p>
+                                </div>
+                                <div class="visaAll">
+                                    <div class="visaEX">
+                                        <p class="card-num-small">Expiry</p>
+                                        <p class="john-joe-bold">08/24</p>
+                                    </div>
+                                    <div class="visaCvv">
+                                        <p class="card-num-small">CVV</p>
+                                        <p class="john-joe-bold">123</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <!-- THE END OF THE CARD-->
+    
+                    </div>
+                    <div class="mine">
+                        <button class="mineBTC">MINE BTC</button>
+                        <button class="mineETHEREUIM">MINE ETHEREUIM</button>
+                        <button class="mineUSDT">MINE USDT</button>
+                    </div>
+
+
+                    <div class="middleOneTwo">
+                        <div class="middleOneTwofirst">
+                            <p class="detailsHead">Income</p>
+                            <details>
+                                <summary>Details</summary>
+                                <p class="detailsMoney">$29,023</p>
+                                <p class="detailsRate">+1.5%</p>
+                                <p class="detailsLast">compared to $28,938 last month</p>
+                            </details>
+                        </div>
+
+                        <div class="middleOneTwofirst">
+                            <p class="detailsHead">Expenses</p>
+                            <details>
+                                <summary>Details</summary>
+                                <p class="detailsMoney">$99,678</p>
+                                <p class="detailsRate">+1.5%</p>
+                                <p class="detailsLast">compared to $28,938 last month</p>
+                            </details>
+                        </div>
+
+                        <div class="middleOneTwofirst">
+                            <p class="detailsHead">Cashback</p>
+                            <details>
+                                <summary>Details</summary>
+                                <p class="detailsMoney">$9,004</p>
+                                <p class="detailsRate">+1.5%</p>
+                                <p class="detailsLast">compared to $28,938 last month</p>
+                            </details>
+                        </div>
+
+                        <div class="middleOneTwofirst">
+                            <p class="detailsHead">Income</p>
+                            <details>
+                                <summary>Details</summary>
+                                <p class="detailsMoney">$2,311</p>
+                                <p class="detailsRate">+1.5%</p>
+                                <p class="detailsLast">compared to $28,938 last month</p>
+                            </details>
+                        </div>
+                     
+                    </div>
+
+                    <div class="middleOneThree">
+                        <div class="middleOneThreeFastPayment">
+                            <p>Fast Payment</p>
+                        </div>
+                        <div class="fastPaymentNext">
+                            <div class="middleOneThreeOnePlus">
+                                <p class="plus">+</p>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirblue"></p><p>Training</p><p class="cirPrice">$50</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirgreen"></p><p>Internet</p><p class="cirPrice">$50</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirblue"></p><p>Gas</p><p class="cirPrice">$190</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirred"></p><p>Movies</p><p class="cirPrice">$35</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirblue"></p><p>Education</p><p class="cirPrice">$999</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirred"></p><p>Electricity</p><p class="cirPrice">$109</p></div>
+                            </div>
+                            <div class="middleOneThreeOne">
+                                <div><p class="cirgreen"></p><p>Food</p><p class="cirPrice">$309</p></div>
+                            </div>
+                        </div>
+                  
+                    </div>
+
+                    <div class="middleOneFour">
+                        <div class="iframe">
+                            <div style="height:400px; background-color: black; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: black; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: black; text-decoration:none; font-size:11px"></a>&nbsp;</div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- THIRD -->
+            <div class="right">
+
+                <div class="rightWhiteBox">
+                
+                    <div class="rightOneOne">
+                        <p>Investments</p>
+                        <a href="#"><p id="more">More</p><img src="static/INVESTMENT IMAGES/pngfind.com-right-symbol-png-2870203.png" alt=""></a>
+                    </div>
+                    <div class="rightOne">
+                       
+                        <div class="rightOneTwo">
+                            <img src="static/INVESTMENT IMAGES/images/uniliver.png" alt="">
+                            <p class="rightOneTwoHeader">Uniliver</p>
+                            <div class="rightOneThree">
+                                <p class="rightOneTwoSame">7 nov, 2022</p>
+                                <p class="rightOneTwoSameSame">9:14pm</p>
+                            </div>
+                            <div class="rightOneFour">
+                                <p class="rightOneTwoSame">1402</p>
+                                <p class="rightOneTwoSameSame">Bonds</p>
+                            </div>
+                            <div class="rightOneFive">
+                                <p class="rightOneFivePrice">$20,033</p>
+                                <p class="colorRedrightOneFive">-4.27%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightOne">
+                       
+                        <div class="rightOneTwo">
+                            <img src="static/INVESTMENT IMAGES/images/tesla.png" alt="">
+                            <p class="rightOneTwoHeader">Tesla</p>
+                            <div class="rightOneThree">
+                                <p class="rightOneTwoSame">7 nov, 2022</p>
+                                <p class="rightOneTwoSameSame">9:14pm</p>
+                            </div>
+                            <div class="rightOneFour">
+                                <p class="rightOneTwoSame">1402</p>
+                                <p class="rightOneTwoSameSame">Bonds</p>
+                            </div>
+                            <div class="rightOneFive">
+                                <p class="rightOneFivePrice">$20,033</p>
+                                <p class="colorGreenrightOneFive">-4.27%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightOne">
+                       
+                        <div class="rightOneTwo">
+                            <img src="static/INVESTMENT IMAGES/images/monster.png" alt="">
+                            <p class="rightOneTwoHeader">Monster</p>
+                            <div class="rightOneThree">
+                                <p class="rightOneTwoSame">7 nov, 2022</p>
+                                <p class="rightOneTwoSameSame">9:14pm</p>
+                            </div>
+                            <div class="rightOneFour">
+                                <p class="rightOneTwoSame">1402</p>
+                                <p class="rightOneTwoSameSame">Bonds</p>
+                            </div>
+                            <div class="rightOneFive">
+                                <p class="rightOneFivePrice">$20,033</p>
+                                <p class="colorGreenrightOneFive">-4.27%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightOne">
+                       
+                        <div class="rightOneTwo">
+                            <img src="static/INVESTMENT IMAGES/images/mcdonalds.png" alt="">
+                            <p class="rightOneTwoHeader">Mc Donalds</p>
+                            <div class="rightOneThree">
+                                <p class="rightOneTwoSame">7 nov, 2022</p>
+                                <p class="rightOneTwoSameSame">9:14pm</p>
+                            </div>
+                            <div class="rightOneFour">
+                                <p class="rightOneTwoSame">1402</p>
+                                <p class="rightOneTwoSameSame">Bonds</p>
+                            </div>
+                            <div class="rightOneFive">
+                                <p class="rightOneFivePrice">$20,033</p>
+                                <p class="colorRedrightOneFive">-4.27%</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="recentTransactions">
+                    <p class="recentTransactionspara">Recent Transactions</p>
+                    <a href="#" id="anker"><p id="more">More<img src="static/INVESTMENT IMAGES/pngfind.com-right-symbol-png-2870203.png" alt=""></p></a>
+                </div>
+
+                <div class="AfterRecentTransactions">
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Music</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisa"><img src="static/INVESTMENT IMAGES/images/visa.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$20</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Shopping</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisaBlue"><img src="static/INVESTMENT IMAGES/images/visa.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$799</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Restaurant</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisaBlack"><img src="static/INVESTMENT IMAGES/images/master card.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$50</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Games</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisa"><img src="static/INVESTMENT IMAGES/images/visa.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$44</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Pharmacy</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisaBlue"><img src="static/INVESTMENT IMAGES/images/visa.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$30</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="AfterRecentTransactionOne">
+                        <div class="AfterRecentTransactionOneimage">
+                            <!-- <img src="INVESTMENT IMAGES/Tron-TRX-Icon.png" alt=""> -->
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsBold">Fitness</p>
+                            <p class="AfterRecentTransactionsunder">20.11,2022</p>
+                        </div>
+                        <div class="AfterRecentTransactionsTwo">
+                            <p class="AfterRecentTransactionsVisaBlack"><img src="static/INVESTMENT IMAGES/images/master card.png" alt=""></p>
+                            <div class="AfterRecentTransactionsNextDiv">
+                                <p class="AfterRecentTransactionsNextDivNum">*2752</p>
+                                <p class="AfterRecentTransactionsNextDivCC">credit card</p>
+                            </div>
+                        </div>
+                        <div class="AfterRecentTransactions">
+                            <p class="AfterRecentTransactionsLast">-$20</p>
+                        </div>
+                    </div>
+           
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="static/js/index.js"></script>
+</body>
+</html>
